@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #121212;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.btn {
+  font-size: 18px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Dragon Button */
+.btn.dragon {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+}
+.btn.dragon:hover {
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
+  transform: scale(1.05);
+}
+
+/* Fire Button */
+.btn.fire {
+  background: linear-gradient(135deg, #f12711, #f5af19);
+}
+.btn.fire:hover {
+  background: linear-gradient(135deg, #f5af19, #f12711);
+  transform: scale(1.05);
+}
+
+/* Lightning Button */
+.btn.lightning {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+.btn.lightning:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  transform: scale(1.05);
+}
+
+.btn i {
+  font-size: 20px;
+}
